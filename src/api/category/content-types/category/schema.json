@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "categoryName": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "photo": {
       "type": "relation",
