@@ -14,13 +14,14 @@
   "attributes": {
     "categoryName": {
       "type": "string",
-      "unique": true
+      "unique": true,
+      "required": true
     },
     "photo": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::photo.photo",
-      "mappedBy": "category"
+      "inversedBy": "categories"
     }
   }
 }

@@ -26,12 +26,6 @@
         "videos"
       ]
     },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category",
-      "inversedBy": "photo"
-    },
     "isRecommend": {
       "type": "boolean",
       "default": false
@@ -42,6 +36,12 @@
     },
     "descrption": {
       "type": "text"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "photo"
     }
   }
 }
