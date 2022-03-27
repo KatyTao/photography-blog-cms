@@ -17,9 +17,9 @@
       "unique": true,
       "required": true
     },
-    "photo": {
+    "photos": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::photo.photo",
       "inversedBy": "categories"
     }
